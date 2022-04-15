@@ -1,0 +1,105 @@
+@import "../../global.scss";
+
+.link-button {
+    margin: 0 1rem;
+    a {
+        font-size: $font-size-small;
+        text-decoration: none;
+    }
+}
+
+.transparent-bg {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    a {
+        color: black;
+        font-weight: $font-weight-regular;
+        font-family: $font-urbanist;
+        background-color: transparent;
+        padding: 0.1rem 0.7rem;
+    }
+    &:hover {
+        opacity: 0.7;
+        color: black;
+        a {
+            color: black;
+        }
+    }
+}
+
+.gradient-txt {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    a {
+        color: white;
+        padding: 0.1rem 0.7rem;
+        font-weight: $font-weight-regular;
+        font-family: $font-urbanist;
+        background: rgb(174, 131, 255);
+        background: linear-gradient(
+            270deg,
+            rgba(174, 131, 255, 1) 0%,
+            rgba(87, 89, 184, 1) 50%,
+            rgba(97, 101, 215, 1) 100%
+        );
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &:hover {
+        opacity: 0.7;
+        a {
+            background: rgb(174, 131, 255);
+            background: linear-gradient(
+                270deg,
+                rgba(174, 131, 255, 1) 0%,
+                rgba(87, 89, 184, 1) 50%,
+                rgba(97, 101, 215, 1) 100%
+            );
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.gradient-btn {
+    border: 1px solid transparent;
+    border-radius: 15px;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+    background: rgb(174, 131, 255);
+    background: linear-gradient(
+        270deg,
+        rgba(174, 131, 255, 1) 0%,
+        rgba(87, 89, 184, 1) 50%,
+        rgba(97, 101, 215, 1) 100%
+    );
+    color: white;
+    opacity: 1;
+    a {
+        color: white;
+        padding: 0.1rem 1.1rem;
+        font-weight: $font-weight-regular;
+        font-family: $font-urbanist;
+    }
+    &:hover {
+        opacity: 0.7;
+        // background: rgb(174, 131, 255);
+        // background: linear-gradient(
+        //     270deg,
+        //     rgba(255, 255, 255, 1) 0%,
+        //     rgba(255, 255, 255, 1) 50%,
+        //     rgba(255, 255, 255, 1) 100%
+        // );
+        // color: white;
+        a {
+            color: white;
+        }
+    }
+}

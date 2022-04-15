@@ -1,0 +1,15 @@
+@import "../../global.scss";
+
+.globe-banner {
+    position: relative;
+    img {
+        position: absolute;
+        // width: 20rem;
+        height: 19rem;
+    }
+    .background-gradient {
+        height: 10rem;
+        border-radius: 40px;
+    }
+
+}

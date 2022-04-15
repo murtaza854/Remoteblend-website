@@ -1,0 +1,21 @@
+@import "../../global.scss";
+
+.stats-item {
+    text-align: center;
+    width: fit-content;
+    background: rgb(174,131,255);
+    background: linear-gradient(-270deg, rgba(174,131,255,1) 0%, rgba(87,89,184,1) 50%, rgba(97,101,215,1) 100%);
+    padding: 0.3rem 0;
+    width: 13rem;
+    border-radius: 20px;
+    h1, p {
+        color: white;
+    }
+    p {
+        font-size: $font-size-small;
+        font-weight: $font-weight-medium;
+    }
+    h1 {
+        font-size: $font-size-very-large;
+    }
+}

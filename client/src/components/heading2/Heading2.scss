@@ -1,0 +1,17 @@
+@import "../../global.scss";
+
+.heading2 {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-medium;
+    line-height: 1;
+    color: black;
+    width: fit-content;
+}
+
+.white-color {
+    color: white !important;
+}
+
+.w47 {
+    width: 47rem !important;
+}

@@ -1,0 +1,9 @@
+@import "../../global.scss";
+
+.heading3 {
+    font-size: $font-size-large;
+    font-weight: $font-weight-medium;
+    line-height: 1;
+    color: black;
+    width: fit-content;
+}

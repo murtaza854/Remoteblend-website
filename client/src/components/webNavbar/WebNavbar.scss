@@ -1,0 +1,13 @@
+@import '../../global.scss';
+
+.web-navbar {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    .navbar {
+        padding: 1.5rem 4rem;
+        .logo {
+            width: 17rem;
+        }
+    }
+}

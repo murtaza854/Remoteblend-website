@@ -1,0 +1,27 @@
+@import "../../global.scss";
+
+.content-card {
+    width: fit-content !important;
+    .card {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        // height: 16rem;
+        border-radius: 40px;
+        border: 1px solid transparent;
+        background-color: #f4f7fa;
+        transition: all 0.3s ease-in-out;
+        .card-title {
+            font-size: $font-size-regular;
+            font-weight: $font-weight-medium;
+            color: black;
+            line-height: 1.2;
+        }
+        .card-text {
+            font-size: $font-size-very-small;
+            font-weight: $font-weight-light;
+            color: black;
+            line-height: 1.2;
+        }
+    }
+}

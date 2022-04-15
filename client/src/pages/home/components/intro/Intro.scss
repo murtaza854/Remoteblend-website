@@ -1,0 +1,30 @@
+@import '../../../../global.scss';
+
+.intro {
+    background-color: #f4f7fa;
+    // padding-top: 17rem;
+    // padding-bottom: 17rem;
+    .col-md-6 {
+        min-height: 100vh;
+        padding-top: 17rem;
+        padding-bottom: 17rem;
+    }
+    .purple-back {
+        position: absolute;
+        width: 34rem;
+        top: 0;
+        right: 0;
+    }
+    .intro-tv {
+        position: absolute;
+        width: 100%;
+    }
+    .intro-jellybeans {
+        position: absolute;
+        width: 10rem;
+        right: 15%;
+        // left: 50%;
+        top: 17%;
+        // transform: translateY(-60%);
+    }
+}
