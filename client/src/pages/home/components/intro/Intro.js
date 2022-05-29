@@ -9,7 +9,7 @@ function Intro(props) {
     return (
         <div className='intro'>
             <div className='purple-back-container'>
-            <img className='purple-back' src='/Illustrations/RB_010.png' alt='back' />
+                <img className='purple-back' src='/Illustrations/RB_010.png' alt='back' />
             </div>
             <Container>
                 <Row>

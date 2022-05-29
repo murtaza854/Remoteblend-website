@@ -24,6 +24,9 @@ function WebNavbar(props) {
         }
     }
 
+    let color = 'black';
+    if (window.location.pathname === '/') color = 'white';
+
     return (
         <div className='web-navbar'>
             <Navbar bg="transparent">
@@ -43,7 +46,7 @@ function WebNavbar(props) {
                     </div>
                     <div className='unhide-992'>
                         <div className="d-flex">
-                            <i id="client-sidebar-hamburger" className="fa fa-bars" onClick={onClickHamburger} />
+                            <i id="client-sidebar-hamburger" style={{ color: color }} className="fa fa-bars" onClick={onClickHamburger} />
                         </div>
                     </div>
                 </Container>
