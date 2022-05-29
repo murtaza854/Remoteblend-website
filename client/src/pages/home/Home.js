@@ -1,9 +1,14 @@
-import React from 'react';
-import { GlobeBanner, Heading2 } from '../../components';
+import React, { useEffect } from 'react';
+import { GlobeBanner, Heading2, Heading3 } from '../../components';
 import { ClientLogos, Engineers, Intro, Reviews, Stats } from './components';
 import './Home.scss';
 
 function Home(props) {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div>
             <Intro />
@@ -27,6 +32,14 @@ function Home(props) {
             <div className='margin-global-top-4' />
             <ClientLogos />
             <Reviews />
+            <Heading3
+                firstLine='Building Teams'
+                secondLineColor='Beyond'
+                seconeLine='Borders'
+                thirdLine=''
+                fourthLine=''
+                className="center-horizontal-relative"
+            />
         </div>
     );
 }

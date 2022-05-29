@@ -3,7 +3,48 @@
 .heading3 {
     font-size: $font-size-large;
     font-weight: $font-weight-medium;
-    line-height: 1;
+    line-height: 1.2;
     color: black;
     width: fit-content;
+    span {
+        background: rgb(174, 131, 255);
+        background: linear-gradient(
+            270deg,
+            rgba(174, 131, 255, 1) 0%,
+            rgba(87, 89, 184, 1) 50%,
+            rgba(97, 101, 215, 1) 100%
+        );
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+// Large devices (desktops, less than 1400px)
+@media (max-width: 87.49875em) {
+    .heading3 {
+        font-size: $font-size-very-medium;
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 74.99875em) {
+    .heading3 {
+        font-size: $font-size-medium;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 61.99875em) {
+    .heading3 {
+        font-size: $font-size-regular;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 47.99875em) {
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 35.99875em) {
 }

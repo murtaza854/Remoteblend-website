@@ -25,3 +25,39 @@
         }
     }
 }
+
+// Large devices (desktops, less than 1400px)
+@media (max-width: 87.49875em) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 74.99875em) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 61.99875em) {
+    .content-card {
+        .card {
+            .card-title {
+                font-size: $font-size-small;
+            }
+            .card-text {
+                font-size: $font-size-little;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 47.99875em) {
+
+    .content-card {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 35.99875em) {
+}

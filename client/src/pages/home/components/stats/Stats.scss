@@ -1,4 +1,4 @@
-@import '../../../../global.scss';
+@import "../../../../global.scss";
 
 .stats {
     .col-md-6 {
@@ -9,4 +9,43 @@
             display: flex;
         }
     }
+}
+
+// Large devices (desktops, less than 1400px)
+@media (max-width: 87.49875em) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 74.99875em) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 61.99875em) {
+    .stats {
+        .col-md-6 {
+            min-height: auto;
+        }
+        .item-cont {
+            margin-top: 4rem;
+        }
+        .container {
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 47.99875em) {
+    .stats {
+        .center-vertical-relative {
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 35.99875em) {
 }

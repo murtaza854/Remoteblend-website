@@ -1,0 +1,109 @@
+@import "../../global.scss";
+
+.careers {
+    .build-with-us-img {
+        width: 35rem;
+        height: 100%;
+    }
+    .form-row-choose {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .gray-back {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            text-align: center;
+            // height: 16rem;
+            border-radius: 40px;
+            border: 1px solid transparent;
+            background-color: #f4f7fa;
+            transition: all 0.3s ease-in-out;
+            font-size: $font-size-very-small;
+            font-weight: $font-weight-light;
+            color: black;
+            line-height: 1.2;
+            padding: 1rem 3rem;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            // &:active {
+            //     background-color: black;
+            //     color: #f4f7fa;
+            // }
+        }
+        .active-gray-back {
+            background-color: black;
+            color: #f4f7fa;
+        }
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="file"],
+    select,
+    textarea {
+        border-radius: 40px;
+        border: 1px solid transparent;
+        background-color: #f4f7fa;
+        transition: all 0.3s ease-in-out;
+        font-size: $font-size-very-small;
+        font-weight: $font-weight-light;
+        color: black;
+        line-height: 1.2;
+        padding: 1rem 3rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        &:active {
+            outline: none;
+            box-shadow: none;
+            border: none;
+        }
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: none;
+            background-color: #f4f7fa;
+        }
+    }
+    .gradient-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// Large devices (desktops, less than 1400px)
+@media (max-width: 87.49875em) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 74.99875em) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 61.99875em) {
+    .padding-horizontal-7 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .margin-global-top-11 {
+        margin-top: 7rem;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 47.99875em) {
+    .careers {
+        .margin-global-top-4 {
+            margin-top: 2rem !important;
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 35.99875em) {
+    .careers {
+        .row {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}

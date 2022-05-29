@@ -1,4 +1,4 @@
-@import '../../global.scss';
+@import "../../global.scss";
 
 .web-navbar {
     position: absolute;
@@ -8,6 +8,55 @@
         padding: 1.5rem 4rem;
         .logo {
             width: 17rem;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1400px)
+@media (max-width: 87.49875em) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 74.99875em) {
+    .web-navbar {
+        .navbar {
+            padding: 1.5rem 2.5rem;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 61.99875em) {
+    .web-navbar {
+        .navbar {
+            padding: 1.5rem 1rem;
+        }
+        .fa-bars {
+            color: #f4f7fa;
+            font-size: $font-size-small;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 47.99875em) {
+    .web-navbar {
+        .navbar {
+            .logo {
+                width: 13rem;
+            }
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 35.99875em) {
+    .web-navbar {
+        .navbar {
+            padding: 1.5rem 0rem;
+            .logo {
+                width: 11rem;
+            }
         }
     }
 }

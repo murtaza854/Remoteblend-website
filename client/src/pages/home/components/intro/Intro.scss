@@ -1,9 +1,7 @@
-@import '../../../../global.scss';
+@import "../../../../global.scss";
 
 .intro {
     background-color: #f4f7fa;
-    // padding-top: 17rem;
-    // padding-bottom: 17rem;
     .col-md-6 {
         min-height: 100vh;
         padding-top: 17rem;
@@ -18,13 +16,104 @@
     .intro-tv {
         position: absolute;
         width: 100%;
+        top: 5%;
     }
     .intro-jellybeans {
         position: absolute;
         width: 10rem;
         right: 15%;
-        // left: 50%;
         top: 17%;
-        // transform: translateY(-60%);
+    }
+}
+
+// Large devices (desktops, less than 1400px)
+@media (max-width: 87.49875em) {
+    .intro {
+        .col-md-6 {
+            padding-top: 13rem;
+            padding-bottom: 13rem;
+        }
+        .purple-back {
+            width: 29rem;
+        }
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 74.99875em) {
+    .intro {
+        .col-md-6 {
+            padding-top: 9rem;
+            padding-bottom: 9rem;
+        }
+        .purple-back {
+            width: 25rem;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 61.99875em) {
+    .intro {
+        .col-md-6 {
+            min-height: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-bottom: 0;
+        }
+        .heading3 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .row {
+            min-height: 100vh;
+            padding-bottom: 3rem;
+        }
+        .intro-tv {
+            position: relative;
+            width: 23rem;
+            margin: auto;
+            display: block;
+        }
+        .intro-jellybeans {
+            width: 8rem;
+            right: 0;
+            top: 21%;
+        }
+        .tv-col {
+            padding-top: 3rem;
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 47.99875em) {
+    .intro {
+        .intro-jellybeans {
+            right: 17%;
+        }
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 35.99875em) {
+    .intro {
+        .intro-tv {
+            width: 20rem;
+        }
+        .intro-jellybeans {
+            width: 7rem;
+            right: 13%;
+        }
+        .tv-col {
+            padding-top: 3rem;
+        }
+        overflow-x: hidden;
+        .purple-back-container {
+            position: relative;
+            .purple-back {
+                transform: translateX(40%);
+            }
+        }
     }
 }

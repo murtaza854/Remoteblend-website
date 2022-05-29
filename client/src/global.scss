@@ -15,10 +15,12 @@ $font-maia: 'Maia', sans-serif;
 $font-raleway: 'Raleway', sans-serif;
 $font-urbanist: 'Urbanist', sans-serif;
 
+$font-size-little: 1.1rem;
 $font-size-very-small: 1.3rem;
 $font-size-small: 1.7rem;
 $font-size-regular: 2.1rem;
 $font-size-medium: 2.5rem;
+$font-size-very-medium: 3rem;
 $font-size-large: 3.4rem;
 $font-size-very-large: 5.3rem;
 
@@ -89,6 +91,13 @@ $font-weight-bold: 700;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.center-horizontal-relative {
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .center-relative {
@@ -185,4 +194,54 @@ $font-weight-bold: 700;
 
 .margin-global-top-15 {
     margin-top: 15rem;
+}
+
+.unhide-768 {
+    display: none;
+}
+.unhide-992 {
+    display: none;
+}
+
+// Large devices (desktops, less than 1400px)
+@media (max-width: 87.49875em) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 74.99875em) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 61.99875em) {
+    .padding-horizontal-7 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .margin-global-top-11 {
+        margin-top: 7rem;
+    }
+    .hide-992 {
+        display: none !important;
+    }
+    .unhide-992 {
+        display: block !important;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 47.99875em) {
+    .hide-768 {
+        display: none;
+    }
+    .unhide-768 {
+        display: block;
+    }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 35.99875em) {
+}
+
+html, body {
+    overflow-x: hidden !important;
 }

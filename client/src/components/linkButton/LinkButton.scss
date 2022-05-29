@@ -15,7 +15,7 @@
     opacity: 1;
     a {
         color: black;
-        font-weight: $font-weight-regular;
+        font-weight: $font-weight-bold;
         font-family: $font-urbanist;
         background-color: transparent;
         padding: 0.1rem 0.7rem;
@@ -38,7 +38,7 @@
     a {
         color: white;
         padding: 0.1rem 0.7rem;
-        font-weight: $font-weight-regular;
+        font-weight: $font-weight-bold;
         font-family: $font-urbanist;
         background: rgb(174, 131, 255);
         background: linear-gradient(
@@ -85,7 +85,7 @@
     a {
         color: white;
         padding: 0.1rem 1.1rem;
-        font-weight: $font-weight-regular;
+        font-weight: $font-weight-bold;
         font-family: $font-urbanist;
     }
     &:hover {

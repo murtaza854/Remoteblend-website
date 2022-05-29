@@ -13,13 +13,13 @@ import './App.scss';
 function App() {
 
   return (
-      <Router>
-        <Switch>
-          <Route path="*">
-            <RoutesFile />
-          </Route>
-        </Switch>
-      </Router>
+    <Router>
+      <Switch>
+        <Route path="*">
+          <RoutesFile />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

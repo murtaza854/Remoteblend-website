@@ -5,8 +5,8 @@ import {
     useLocation,
 } from "react-router-dom";
 // import { MainNavbar, Footer, BlackBar } from './components';
-import { WebNavbar } from './components';
-import { Home } from './pages';
+import { Footer, Sidebar, WebNavbar } from './components';
+import { Home, BuildWithUs, Careers } from './pages';
 
 import {
     TransitionGroup,
@@ -31,8 +31,20 @@ function RoutesFile(props) {
                 >
                     <div className="page">
                         <Switch location={location}>
+                            <Route exact path="/careers">
+                                <Careers />
+                                <Footer />
+                                <Sidebar />
+                            </Route>
+                            <Route path="/build-with-us">
+                                <BuildWithUs />
+                                <Footer />
+                                <Sidebar />
+                            </Route>
                             <Route path="/">
                                 <Home />
+                                <Footer />
+                                <Sidebar />
                             </Route>
                         </Switch>
                     </div>
